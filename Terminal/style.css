@@ -1,0 +1,17 @@
+.zak{
+    position: relative;
+    margin: 50px;
+    left: 50px;
+    top: 5%;
+    width: 10%;
+    background-color: #6886ff;
+}
+.check{
+    background-color: #6886ff;
+    position: relative;
+    margin: 50px;
+    left: 50px;
+    top: 5%;
+    width: 10%;
+    
+}
