@@ -1,0 +1,16 @@
+form{
+    width: 30%;
+    border:solid 2px;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+#reg_form{
+    border-color: #f11515;
+}
+#auth_form{
+    border-color: #339900;
+}
+s
