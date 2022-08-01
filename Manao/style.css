@@ -10,7 +10,27 @@ form{
 #reg_form{
     border-color: #f11515;
 }
-#auth_form{ 
+#auth_form{
     border-color: #339900;
+}
+
+form#reg_form input[type="text"].error, form#reg_form input[type="password"].error {
+    border: 1px solid red;
+}
+
+form#reg_form span.dot {
+    position: absolute;
+    color: red;
+    line-height: 15px;
+    right: 0;
+}
+
+form#reg_form span.text-error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 10px;
+    line-height: 10px;
 }
 
