@@ -1,9 +1,7 @@
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>MANAO</title>
-
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
               rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
@@ -13,12 +11,9 @@
               crossorigin="anonymous">
         <link href="./style.css" rel="stylesheet">  
         <script type="module" src="validate.js"></script>
-
-
     </head>
-
     <body>  
-        <form method="post" id="reg_form" action="" >
+        <form method="post" id="reg_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >
             <h4>Registration form</h4>  
             <input required class="input-group mb-3" type="text" class="form-control"
                    placeholder="Login" name ='login' id="login"
@@ -49,8 +44,6 @@
             <input type="button" id="btn" value="Отправить" />
             <div id="result_reg_form"></div> 
         </form>
-
         <br>
-
     </body>
 </html>

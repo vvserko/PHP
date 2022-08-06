@@ -1,11 +1,30 @@
+body{
+    height: 90vh;
+    font-family: MONtSERrAT, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 form{
-    width: 50%;
+    width: 300px;    
     border:solid 2px;
-    border-radius: 5px;
-    padding: 20px;
-    position: relative;
-    left: 50px;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;    
     top: 50px;
+}
+#start_form{
+    width: 300px;   
+}
+#start_form button{    
+    text-align:   center;
+    width: 100%;
+    margin-top:  5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
 }
 #reg_form{
     border-color: #f11515;
@@ -13,24 +32,3 @@ form{
 #auth_form{
     border-color: #339900;
 }
-
-form#reg_form input[type="text"].error, form#reg_form input[type="password"].error {
-    border: 1px solid red;
-}
-
-form#reg_form span.dot {
-    position: absolute;
-    color: red;
-    line-height: 15px;
-    right: 0;
-}
-
-form#reg_form span.text-error {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: red;
-    font-size: 10px;
-    line-height: 10px;
-}
-

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -15,22 +14,22 @@
     </head>
 
     <body> 
-        <form method="post" id="auth_form" action="" >   
-            <h4>Autorization form</h4>
-            <input required class="input-group mb-3" type="text" class="form-control" placeholder="LOGIN" 
-                   name='auth_login' id="auth_login"
-                   aria-label="Username" aria-describedby="basic-addon1"> 
-            <span id="authLoginErr"></span>
+        <form method="post" id="auth_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >   
+            <h1 id = 'cookie'></h1>
+            <h4>Autorization form</h4>            
+            <input required class="input-group mb-3" type="text" class="form-control" placeholder="Login" 
+                   name='auth_login' id="auth_login" aria-label="Username" aria-describedby="basic-addon1"> 
+            <span id="authLoginErr"></span>            
             <br><br>
+
             <input required class="input-group mb-3" type="password" class="form-control" placeholder="Password" 
-                   name='auth_password' id="auth_password"
-                   aria-label="Password" aria-describedby="basic-addon2">  
-            <span id="authPasswordErr"></span>
-            <br><br>  
-            <input type="button" id="btn_get_user" value="Отправить" />
-            
-        </form>     
-        <br/>
-        
+                   name='auth_password' id="auth_password" aria-label="Password" aria-describedby="basic-addon2">  
+            <span id="authPasswordErr"></span>            
+            <br><br> 
+
+            <input type="button" id="btn_get_user" value="Отправить" />            
+        </form> 
+        <p id="result_auth_form"></p>
+        <br/>        
     </body>
 </html>
