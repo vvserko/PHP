@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +17,17 @@
     </head>
 
     <body> 
+
         <form method="post" id="auth_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >   
+            <?php
+            if (isset($_COOKIE['login_cookies']) && isset($_SESSION['login_session'])) {
+                echo "<h4> Hello," . $_COOKIE['login_cookies'] . "!!!</h4> <p>- это куки</p> ";
+                echo "<h4> Hello," . $_SESSION['login_session'] . "!!!</h4> - это сессии <br>";
+            } else {
+                echo "<h1>Hello, guest</h1><br>";
+                echo "<br>";
+            }
+            ?>
             <h1 id = 'cookie'></h1>
             <h4>Autorization form</h4>            
             <input required class="input-group mb-3" type="text" class="form-control" placeholder="Login" 

@@ -22,7 +22,7 @@ $(document).ready(function () {
 
                 if (login_validation(login) === true
                         && password_validation(password) === true
-                        && confirm_password_validation(password, confirm_password) === true
+                        && confirm_password_validation($("#password").val(), confirm_password) === true
                         && email_validation(email) === true
                         && name_validation(name) === true) {
                     sendAjaxForm('reg_form', 'adduser.php');                   
@@ -47,8 +47,7 @@ function sendAjaxForm(reg_form, url) {
                 document.getElementById("loginErr").textContent = 'Login is exist. Enter another login.';
             } else if (response === 'Email is exist. Enter another email.') {                
                 document.getElementById("emailErr").textContent = 'Email is exist. Enter another email.';
-            } else {                 
-                console.log(response);    
+            } else if (response === 'OK'){ 
                 window.location.href = "http://localhost/Manao/hello_user.php";
             }
         },

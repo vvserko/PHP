@@ -1,14 +1,4 @@
-<?php
-session_start();
-if (isset($_POST['exit'])) {
-    if (isset($_COOKIE)) {
-        unset($_COOKIE['login']);
-        setcookie('login', null, '/');
-        //$_COOKIE = [];
-        $_SESSION = [];
-    }
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

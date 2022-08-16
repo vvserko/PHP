@@ -1,0 +1,12 @@
+body{
+    height: 90vh;
+    font-family: MONtSERrAT, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 300px;    
+    justify-content: center;
+    border: 2px solid blueviolet;
+}

@@ -45,13 +45,13 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
             header('Content-Type: application/json');
             json_encode($jsonArray);
             $json = json_encode('OK');
-            setcookie("login", $jsonArray[$userAuthLogin]['userLogin']);
-            $_SESSION[$userAuthLogin] = $jsonArray[$userAuthLogin];
+            setcookie("login_cookies", $jsonArray[$userAuthLogin]['userLogin']);
+            $_SESSION["login_session"] = $jsonArray[$userAuthLogin]['userLogin'];            
             echo $json;
         }
     }
 } else {
-    exit();
+    exit(1);
 }
 ?>
 
